@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Nói IELTS Speaking Part 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #5d45e4;
+            --accent-color: #f7a31b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1f2937, #111827);
+            color: #d1d5db;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            font-family: 'Merriweather', serif;
+            animation: fadeIn 2s ease-out;
+            max-width: 900px;
+            width: 100%;
+            background-color: #1f2937;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #d1d5db;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background-color: #2a3442;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #f3f4f6;
+            margin-bottom: 1rem;
+        }
+
+        .sample-answer {
+            background-color: #374151;
+            padding: 1rem;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .sample-answer h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #a3a9b1;
+            margin-bottom: 0.5rem;
+        }
+
+        .sample-answer p {
+            font-style: italic;
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        
+        button, .download-btn {
+            padding: 0.75rem 1.25rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .record-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+        }
+        
+        .record-btn:hover:enabled {
+            background-color: #4a38b1;
+            transform: scale(1.05);
+        }
+
+        .stop-btn {
+            background-color: #dc2626;
+            color: white;
+            border: none;
+        }
+        
+        .stop-btn:hover:enabled {
+            background-color: #b91c1c;
+            transform: scale(1.05);
+        }
+
+        .download-btn {
+            background-color: #22c55e;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            display: none;
+            border: none;
+        }
+
+        .download-btn:hover:enabled {
+            background-color: #16a34a;
+            transform: scale(1.05);
+        }
+
+        button:disabled, .download-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .audio-player {
+            width: 100%;
+            margin-top: 1rem;
+            background-color: #374151;
+            border-radius: 9999px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .status-message {
+            font-size: 0.85rem;
+            color: #9ca3af;
+            margin-left: 1rem;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <h1 class="header-title">IELTS Speaking Part 2</h1>
+        
+        <!-- Topic 1 -->
+        <div class="card" data-topic-id="topic1">
+            <h2>1. Describe a time you helped someone.</h2>
+            <div class="sample-answer">
+                <h3>Sample Answer:</h3>
+                <p>I’d like to talk about a time I helped my younger sister with her school project. This happened about a year ago. She was in her final year of high school and had a major project for her history class, which involved creating a detailed timeline of significant events in World War II. The situation was quite stressful for her because she was also preparing for her final exams. She felt overwhelmed with the amount of research she had to do and was struggling to organize all the information into a clear, visually appealing format. I noticed she was spending hours on it and was getting quite frustrated, so I offered to help. I sat down with her and we broke the project into smaller, manageable parts. I helped her with the research by looking for reliable sources online while she focused on drafting the key points. Then, we worked together to design the timeline on a large poster board. I used my skills with design software to create some illustrations and captions, which made the project look much more professional. By working as a team, we were able to finish it in just a couple of days. After helping her, I felt a great sense of satisfaction. It wasn’t just about finishing the project; it was about seeing her relief and confidence return. Knowing that I could use my skills to ease her burden was a really good feeling. It also brought us closer together as siblings.</p>
+            </div>
+            <div class="controls">
+                <button class="record-btn">Ghi Âm</button>
+                <button class="stop-btn hidden">Dừng Ghi</button>
+                <a class="download-btn" href="#" download="ielts_topic1.webm">Tải Xuống</a>
+                <div class="status-message"></div>
+            </div>
+            <audio class="audio-player hidden" controls></audio>
+        </div>
+
+        <!-- Topic 2 -->
+        <div class="card" data-topic-id="topic2">
+            <h2>2. Describe a product you bought that you were happy with.</h2>
+            <div class="sample-answer">
+                <h3>Sample Answer:</h3>
+                <p>I want to talk about a product I recently bought that has made a big difference in my daily life: a portable blender. I bought it online from an e-commerce website about three months ago. The main reason I decided to purchase it was to make my mornings healthier and more efficient. I often found myself rushing out the door without a proper breakfast, which wasn't good for my energy levels. I wanted a convenient way to make smoothies and shakes on the go, without the hassle of a bulky kitchen blender. What I'm really happy with is how versatile and powerful it is for its size. The battery life is impressive, allowing me to make multiple drinks on a single charge. It’s also incredibly easy to clean, which was a huge plus for me. The design is sleek and compact, so I can easily carry it in my bag to the office or the gym. It has become a key part of my morning routine, and I feel much more energized throughout the day. The convenience and quality have definitely exceeded my expectations.</p>
+            </div>
+            <div class="controls">
+                <button class="record-btn">Ghi Âm</button>
+                <button class="stop-btn hidden">Dừng Ghi</button>
+                <a class="download-btn" href="#" download="ielts_topic2.webm">Tải Xuống</a>
+                <div class="status-message"></div>
+            </div>
+            <audio class="audio-player hidden" controls></audio>
+        </div>
+
+        <!-- Topic 3 -->
+        <div class="card" data-topic-id="topic3">
+            <h2>3. Describe a book you enjoyed reading.</h2>
+            <div class="sample-answer">
+                <h3>Sample Answer:</h3>
+                <p>The book I’d like to talk about is "The Alchemist" by Paulo Coelho. It's a classic and one that many people have read. The story is about a young shepherd boy named Santiago who travels from Spain to the Egyptian desert in search of a treasure he saw in a dream. Along the way, he meets various people who teach him important life lessons. The book is essentially a philosophical novel about following your dreams and listening to your heart. I chose to read it because it was highly recommended by a friend whose taste in books I trust. She told me it was a very inspiring and thought-provoking read, and I was looking for something to motivate me at the time. What I particularly enjoyed about it was its simple yet profound message. The language is quite straightforward, but the themes of destiny, personal legends, and universal love are incredibly powerful. The narrative is almost like a modern-day fable, filled with wisdom and symbolism. Reading it made me reflect on my own goals and aspirations. It’s a book that you can read multiple times and still find new meaning in, which is a sign of a truly great piece of literature.</p>
+            </div>
+            <div class="controls">
+                <button class="record-btn">Ghi Âm</button>
+                <button class="stop-btn hidden">Dừng Ghi</button>
+                <a class="download-btn" href="#" download="ielts_topic3.webm">Tải Xuống</a>
+                <div class="status-message"></div>
+            </div>
+            <audio class="audio-player hidden" controls></audio>
+        </div>
+        
+        <!-- Topic 4 -->
+        <div class="card" data-topic-id="topic4">
+            <h2>4. Describe a place you went to that was full of people.</h2>
+            <div class="sample-answer">
+                <h3>Sample Answer:</h3>
+                <p>I’d like to talk about a place I visited last year that was absolutely packed with people: the Cherry Blossom Festival in Da Nang, Vietnam. The festival is held every spring in a large park near the Han River. The reason there were so many people was that it was a major cultural event celebrating the friendship between Vietnam and Japan. People came to see the stunning cherry blossoms on display, enjoy Japanese traditional performances like music and dance, and try various Japanese and Vietnamese street foods. It was also a beautiful day, so a lot of families and friends came out to take pictures and enjoy the festive atmosphere. I went with a group of friends. We spent our time walking around the park, admiring the beautiful pink and white cherry trees, and taking a lot of photos. We also tried some delicious street food, including Japanese takoyaki and Vietnamese banh mi. We managed to find a spot to sit down and watch a traditional dance performance on the main stage. Honestly, I was surprised by how comfortable I felt despite the crowd. Usually, I’m not a big fan of crowded places, but the atmosphere was so joyful and lively that it was easy to get swept up in the energy. Everyone was smiling and happy. It felt less like a chaotic crowd and more like a big, communal celebration. I enjoyed the experience much more than I thought I would.</p>
+            </div>
+            <div class="controls">
+                <button class="record-btn">Ghi Âm</button>
+                <button class="stop-btn hidden">Dừng Ghi</button>
+                <a class="download-btn" href="#" download="ielts_topic4.webm">Tải Xuống</a>
+                <div class="status-message"></div>
+            </div>
+            <audio class="audio-player hidden" controls></audio>
+        </div>
+        
+        <!-- Topic 5 -->
+        <div class="card" data-topic-id="topic5">
+            <h2>5. Describe a time you received some good news.</h2>
+            <div class="sample-answer">
+                <h3>Sample Answer:</h3>
+                <p>I want to talk about the time I received the good news that I had been accepted into my first-choice university. This happened about three years ago, just after I had finished high school. The news came in an email from the university admissions office. I remember I was sitting at my desk, feeling very nervous and checking my inbox every five minutes. When I finally opened the email and saw the word "Congratulations," a huge wave of relief and excitement washed over me. I immediately ran to tell my parents, who were just as thrilled as I was. This was such good news for a couple of reasons. Firstly, I had worked incredibly hard throughout my final year of high school, studying late into the night and preparing for exams. Getting into this particular university felt like a validation of all that effort. Secondly, this was the program I had dreamed of attending, as it had a strong reputation for my major. It meant that I was finally on the path to pursuing my career goals. The news marked a significant milestone and gave me a sense of direction for the next few years of my life.</p>
+            </div>
+            <div class="controls">
+                <button class="record-btn">Ghi Âm</button>
+                <button class="stop-btn hidden">Dừng Ghi</button>
+                <a class="download-btn" href="#" download="ielts_topic5.webm">Tải Xuống</a>
+                <div class="status-message"></div>
+            </div>
+            <audio class="audio-player hidden" controls></audio>
+        </div>
+
+        <!-- Topic 6 -->
+        <div class="card" data-topic-id="topic6">
+            <h2>6. Describe a person you admire.</h2>
+            <div class="sample-answer">
+                <h3>Sample Answer:</h3>
+                <p>The person I admire most is my grandmother. She’s in her late 70s now and has been a huge influence on my life. She was a teacher for over 40 years before she retired. What I admire most about her is her incredible resilience and her positive outlook on life. She has faced many challenges in her life, but she has always met them with strength and grace. She has this amazing ability to find joy in the simplest things and to see the good in everyone. Even after retiring, she has continued to be very active, volunteering at a local community center and tutoring young children. I admire her not just for her strength, but also for her wisdom and kindness. She is always there to offer advice, but she does it in a way that is gentle and non-judgmental. She taught me the importance of hard work, but also the value of compassion and patience. Her life story and her values have always inspired me to be a better person.</p>
+            </div>
+            <div class="controls">
+                <button class="record-btn">Ghi Âm</button>
+                <button class="stop-btn hidden">Dừng Ghi</button>
+                <a class="download-btn" href="#" download="ielts_topic6.webm">Tải Xuống</a>
+                <div class="status-message"></div>
+            </div>
+            <audio class="audio-player hidden" controls></audio>
+        </div>
+
+        <!-- Topic 7 -->
+        <div class="card" data-topic-id="topic7">
+            <h2>7. Describe a time you were late for an important event.</h2>
+            <div class="sample-answer">
+                <h3>Sample Answer:</h3>
+                <p>I’d like to talk about a time I was late for a job interview. This happened about two years ago, and it was for a position at a company I really wanted to work for. The reason I was late was completely unexpected. I had planned my route the night before, making sure to leave plenty of time to get there. However, on the day of the interview, there was a sudden, heavy downpour of rain. This caused a major traffic jam on the main road, and the buses were all delayed. I was stuck in a bus for about 45 minutes, just watching the time tick away. I tried calling a taxi, but none were available due to the weather. When I finally arrived, I was about 20 minutes late. I was flustered and a little bit wet from the rain. I apologized profusely to the receptionist and explained the situation. Luckily, the interviewer was very understanding. They had been informed of the traffic issues in the city and were patient. The interview went well, despite the rocky start. I felt incredibly stressed and anxious while I was stuck in traffic, and even more so when I arrived late. I was worried I had ruined my chances before the interview had even begun. However, I also felt a sense of relief and gratitude that the interviewer was so understanding. It taught me that while it’s important to be punctual, it’s also important to stay calm and handle unexpected situations professionally.</p>
+            </div>
+            <div class="controls">
+                <button class="record-btn">Ghi Âm</button>
+                <button class="stop-btn hidden">Dừng Ghi</button>
+                <a class="download-btn" href="#" download="ielts_topic7.webm">Tải Xuống</a>
+                <div class="status-message"></div>
+            </div>
+            <audio class="audio-player hidden" controls></audio>
+        </div>
+
+        <!-- Topic 8 -->
+        <div class="card" data-topic-id="topic8">
+            <h2>8. Describe a sport you enjoy playing.</h2>
+            <div class="sample-answer">
+                <h3>Sample Answer:</h3>
+                <p>The sport I enjoy playing the most is badminton. It’s a very popular sport in my country, and you can find courts in almost every local park and community center. I usually play it about two or three times a week, mostly on weekends or in the evenings after work. I have a regular group of friends who I play with. We usually book a court at a nearby sports center, and we often have friendly little competitions. I enjoy playing badminton for a few reasons. Firstly, it’s a fantastic way to get some exercise. It’s a very fast-paced sport that requires a lot of running and quick movements, so it's a great cardio workout. Secondly, it's a lot of fun. The competitive but friendly atmosphere with my friends makes it an enjoyable way to unwind after a long week. Lastly, it’s a great way to socialize and spend quality time with my friends away from a screen. It’s a perfect combination of physical activity and social interaction.</p>
+            </div>
+            <div class="controls">
+                <button class="record-btn">Ghi Âm</button>
+                <button class="stop-btn hidden">Dừng Ghi</button>
+                <a class="download-btn" href="#" download="ielts_topic8.webm">Tải Xuống</a>
+                <div class="status-message"></div>
+            </div>
+            <audio class="audio-player hidden" controls></audio>
+        </div>
+
+        <!-- Topic 9 -->
+        <div class="card" data-topic-id="topic9">
+            <h2>9. Describe an old person you know who is very interesting.</h2>
+            <div class="sample-answer">
+                <h3>Sample Answer:</h3>
+                <p>I'd like to talk about an old man I know named Mr. Minh, who is a retired history professor. He lives in my neighborhood, and I got to know him a few years ago when I started walking my dog past his house. We often chat in his garden, which is always beautifully maintained. What makes Mr. Minh so interesting is his vast knowledge and his incredible memory. He has a passion for local history and has a collection of old photographs and documents from our city. Whenever I talk to him, he shares fascinating stories about what the neighborhood was like 50 or 60 years ago. He doesn't just recite facts; he paints vivid pictures with his words. He's also a great storyteller, and I could listen to him for hours. I’ve learned a great deal from him, not just about history, but about life itself. He’s taught me the importance of being curious and of preserving your memories. He has a way of looking at the past that gives me a deeper appreciation for the present. His life is a testament to the fact that learning and growing never stop, no matter your age.</p>
+            </div>
+            <div class="controls">
+                <button class="record-btn">Ghi Âm</button>
+                <button class="stop-btn hidden">Dừng Ghi</button>
+                <a class="download-btn" href="#" download="ielts_topic9.webm">Tải Xuống</a>
+                <div class="status-message"></div>
+            </div>
+            <audio class="audio-player hidden" controls></audio>
+        </div>
+
+        <!-- Topic 10 -->
+        <div class="card" data-topic-id="topic10">
+            <h2>10. Describe a gift you gave to someone.</h2>
+            <div class="sample-answer">
+                <h3>Sample Answer:</h3>
+                <p>I’d like to talk about a gift I gave to my best friend for her 25th birthday. The gift was a personalized photo album. It was a beautiful, hardcover album filled with photos of us throughout our friendship, from our high school days to our recent travels. I chose this gift because I wanted to give her something that was meaningful and personal. She loves taking photos, but she rarely prints them out, so I thought a physical album would be a wonderful way to capture our memories. I spent a few weeks collecting photos from our social media and from my own camera, and then I organized them chronologically, adding little captions and notes next to each one. When I gave it to her, she was completely surprised and very touched. She started flipping through the pages and teared up a little as she saw all the old pictures. She kept saying how much she loved it and that it was the most thoughtful gift she had ever received. Her reaction made all the effort I put into it feel incredibly worthwhile. It was a gift that was not just an object but a collection of shared experiences.</p>
+            </div>
+            <div class="controls">
+                <button class="record-btn">Ghi Âm</button>
+                <button class="stop-btn hidden">Dừng Ghi</button>
+                <a class="download-btn" href="#" download="ielts_topic10.webm">Tải Xuống</a>
+                <div class="status-message"></div>
+            </div>
+            <audio class="audio-player hidden" controls></audio>
+        </div>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const topicCards = document.querySelectorAll('.card');
+
+            let mediaRecorder;
+            let audioChunks = [];
+            let activeRecordBtn = null;
+            let activeStopBtn = null;
+            let activeDownloadBtn = null;
+            let activeAudioPlayer = null;
+            let activeStatusMessage = null;
+            let isRecording = false;
+
+            topicCards.forEach(card => {
+                const recordBtn = card.querySelector('.record-btn');
+                const stopBtn = card.querySelector('.stop-btn');
+                const downloadBtn = card.querySelector('.download-btn');
+                const audioPlayer = card.querySelector('.audio-player');
+                const statusMessage = card.querySelector('.status-message');
+
+                recordBtn.addEventListener('click', async () => {
+                    if (isRecording) {
+                        statusMessage.textContent = 'Bạn phải dừng ghi âm hiện tại trước khi bắt đầu bài mới.';
+                        return;
+                    }
+
+                    // Reset all other cards
+                    topicCards.forEach(c => {
+                        if (c !== card) {
+                            c.querySelector('.record-btn').disabled = false;
+                            c.querySelector('.stop-btn').classList.add('hidden');
+                            c.querySelector('.download-btn').style.display = 'none';
+                            c.querySelector('.audio-player').classList.add('hidden');
+                            c.querySelector('.status-message').textContent = '';
+                        }
+                    });
+
+                    activeRecordBtn = recordBtn;
+                    activeStopBtn = stopBtn;
+                    activeDownloadBtn = downloadBtn;
+                    activeAudioPlayer = audioPlayer;
+                    activeStatusMessage = statusMessage;
+                    
+                    try {
+                        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                        mediaRecorder = new MediaRecorder(stream);
+                        audioChunks = [];
+
+                        mediaRecorder.addEventListener('dataavailable', event => {
+                            audioChunks.push(event.data);
+                        });
+
+                        mediaRecorder.addEventListener('stop', () => {
+                            const audioBlob = new Blob(audioChunks, { type: 'audio/webm;codecs=opus' });
+                            const audioUrl = URL.createObjectURL(audioBlob);
+
+                            activeAudioPlayer.src = audioUrl;
+                            activeAudioPlayer.classList.remove('hidden');
+                            activeDownloadBtn.href = audioUrl;
+                            activeDownloadBtn.style.display = 'inline-block';
+
+                            stream.getTracks().forEach(track => track.stop());
+
+                            activeStatusMessage.textContent = 'Ghi âm hoàn tất.';
+                            activeRecordBtn.textContent = 'Ghi Âm Lại';
+                            activeRecordBtn.disabled = false;
+                            activeStopBtn.classList.add('hidden');
+                            isRecording = false;
+                        });
+
+                        mediaRecorder.start();
+                        isRecording = true;
+                        activeStatusMessage.textContent = 'Đang ghi âm...';
+                        activeRecordBtn.disabled = true;
+                        activeStopBtn.classList.remove('hidden');
+                        activeAudioPlayer.classList.add('hidden');
+                        activeDownloadBtn.style.display = 'none';
+
+                    } catch (error) {
+                        console.error('Lỗi khi truy cập microphone:', error);
+                        activeStatusMessage.textContent = 'Lỗi: Không thể truy cập microphone. Vui lòng cấp quyền.';
+                        activeRecordBtn.disabled = false;
+                        activeStopBtn.classList.add('hidden');
+                        isRecording = false;
+                    }
+                });
+
+                stopBtn.addEventListener('click', () => {
+                    if (mediaRecorder && mediaRecorder.state === 'recording') {
+                        mediaRecorder.stop();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
